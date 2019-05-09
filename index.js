@@ -14,14 +14,14 @@ var car = {
     }
   },
   start: function() {
-    if (this.ignition === false) {
+    if (!this.ignition) {
       console.log('Turn on the ignition first');
     } else {
       console.log('Car brend ' + this.brend + ' color '  + this.color + ' start');
     }
   },
   stop: function() {
-    if (this.ignition === true) {
+    if (this.ignition) {
      this.ignition = false;
      console.log('Car stop moving');
    } else {
@@ -75,14 +75,14 @@ Car1.prototype.isFullTank = function() {
   }
 };
 Car1.prototype.start = function() {
-  if (this.ignition === false) {
+  if (!this.ignition) {
     console.log('Turn on the ignition first');
   } else {
     console.log('Car brend ' + this.brend + ' color '  + this.color + ' start')
   }
 };
 Car1.prototype.stop = function() {
-  if (this.ignition === true) {
+  if (this.ignition) {
    this.ignition = false;
    console.log('Car stop moving');
  } else {
